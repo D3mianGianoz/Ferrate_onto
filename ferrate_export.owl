@@ -1,0 +1,836 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/damians/ferrate#"
+     xml:base="http://www.semanticweb.org/damians/ferrate"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:wgs84_pos="http://www.w3.org/2003/01/geo/wgs84_pos#"
+     xmlns:cpannotationschema="http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/damians/ferrate">
+        <dc:creator>Aldo Gangemi</dc:creator>
+        <dc:creator>Andrea Nuzzolese</dc:creator>
+        <dc:creator xml:lang="it">Damiano Gianotti</dc:creator>
+        <dc:creator>Valentina Carriero</dc:creator>
+        <dc:creator>Valentina Presutti</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-09-05T09:00:00</dc:date>
+        <dc:description xml:lang="it">Una ontologia dal carattere relazione/guida con cui chiunque potrà acquisire maggiori conoscenze riguardanti le ferrate.
+Presenza di un sistema di punteggio per la complessità, diversi gradi di difficoltà, coordinate GPS ecc...</dc:description>
+        <dc:title xml:lang="it">Ferrata-365</dc:title>
+        <vann:preferredNamespacePrefix>ferrate:</vann:preferredNamespacePrefix>
+        <vann:preferredNamespaceUri>http://www.semanticweb.org/damians/ferrate#</vann:preferredNamespaceUri>
+        <cpannotationschema:coversRequirements>Which is the measurement unit of a time period?, Which is the value of a time period?</cpannotationschema:coversRequirements>
+        <cpannotationschema:hasConsequences>The measurement unit and the numerical value of a time period can be modeled.</cpannotationschema:hasConsequences>
+        <cpannotationschema:hasIntent>To represent time periods, as n-ary relation with a measurement unit and a numerical value.</cpannotationschema:hasIntent>
+        <rdfs:comment xml:lang="en">A pattern for time periods.</rdfs:comment>
+        <rdfs:label xml:lang="it">ferrate</rdfs:label>
+        <rdfs:label>time period</rdfs:label>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/creator -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/date -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/date"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/description -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/description"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/title -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/title"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespacePrefix -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespacePrefix"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespaceUri -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespaceUri"/>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#coversRequirements -->
+
+    <owl:AnnotationProperty rdf:about="http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#coversRequirements">
+        <rdfs:comment>This annotation property is used for exemplifying possible requirements the content pattern provides a solution for. Requirements are expressed as natural language competency questions.</rdfs:comment>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#hasConsequences -->
+
+    <owl:AnnotationProperty rdf:about="http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#hasConsequences">
+        <rdfs:comment>This annotation property is used for briefly describing the benefits and/or possible trade-offs when using the CP.</rdfs:comment>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#hasIntent -->
+
+    <owl:AnnotationProperty rdf:about="http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#hasIntent">
+        <rdfs:comment>This annotation property is used in order to describe the intent of the content pattern.</rdfs:comment>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.w3.org/2003/01/geo/wgs84_pos#alt -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2003/01/geo/wgs84_pos#alt">
+        <rdfs:comment>The WGS84 altitude of a SpatialThing (decimal meters 
+above the local reference ellipsoid).</rdfs:comment>
+        <rdfs:label>altitude</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.w3.org/2003/01/geo/wgs84_pos#lat -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2003/01/geo/wgs84_pos#lat">
+        <rdfs:comment>The WGS84 latitude of a SpatialThing (decimal degrees).</rdfs:comment>
+        <rdfs:label>latitude</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.w3.org/2003/01/geo/wgs84_pos#long -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2003/01/geo/wgs84_pos#long">
+        <rdfs:comment>The WGS84 longitude of a SpatialThing (decimal degrees).</rdfs:comment>
+        <rdfs:label>longitude</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/cp/owl/timeperiod.owl#hasTimePeriodMeasurementUnit -->
+
+    <owl:ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/cp/owl/timeperiod.owl#hasTimePeriodMeasurementUnit">
+        <owl:inverseOf rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/timeperiod.owl#isTimePeriodMeasurementUnitOf"/>
+        <rdfs:comment xml:lang="it">Questa proprietà si riferisce ad un periodo di tempo alla sua unità di misura.</rdfs:comment>
+        <rdfs:comment xml:lang="en">This property relates a time period to its measurement unit.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/timeperiod.owl"/>
+        <rdfs:label xml:lang="en">has time period measurement unit</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/cp/owl/timeperiod.owl#isTimePeriodMeasurementUnitOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/cp/owl/timeperiod.owl#isTimePeriodMeasurementUnitOf">
+        <rdfs:comment xml:lang="it">Questa proprietà mette in relazione l&apos;unità di misura con il periodo di tempo.</rdfs:comment>
+        <rdfs:comment xml:lang="en">This property relates the measurement unit to the time period.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/timeperiod.owl"/>
+        <rdfs:label xml:lang="en">is time period measurement unit of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/damians/ferrate#haComplessità -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/damians/ferrate#haComplessità">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/damians/ferrate#èComplessitàDi"/>
+        <rdfs:comment xml:lang="it">Questa proprietà mette in relazione una via ferrata con la relativa complessità.</rdfs:comment>
+        <rdfs:label xml:lang="it">haComplessità</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/damians/ferrate#haDifficoltà -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/damians/ferrate#haDifficoltà">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/damians/ferrate#èDifficoltàDi"/>
+        <rdfs:comment xml:lang="it">Questa proprietà mette in relazione una via ferrata con ia relativa difficoltà.</rdfs:comment>
+        <rdfs:label xml:lang="it">haDifficoltà</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/damians/ferrate#haDurata -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/damians/ferrate#haDurata">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:comment xml:lang="it">Questa proprietà mette in relazione una via ferrata con ia relativa durata (Time Period).</rdfs:comment>
+        <rdfs:label xml:lang="it">haDurata</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/damians/ferrate#èComplessitàDi -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/damians/ferrate#èComplessitàDi">
+        <rdfs:comment xml:lang="it">Questa proprietà mette in relazione una complessità con ia relativa via ferrata.</rdfs:comment>
+        <rdfs:label xml:lang="it">èComplessitàDi</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/damians/ferrate#èDifficoltàDi -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/damians/ferrate#èDifficoltàDi">
+        <rdfs:comment xml:lang="it">Questa proprietà mette in relazione una difficolta con ia relativa via ferrata.</rdfs:comment>
+        <rdfs:label xml:lang="it">èDifficoltàDi</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/cp/owl/timeperiod.owl#timePeriodValue -->
+
+    <owl:DatatypeProperty rdf:about="http://www.ontologydesignpatterns.org/cp/owl/timeperiod.owl#timePeriodValue">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:comment xml:lang="it">Questa proprietà rappresenta il valore di un periodo di tempo.</rdfs:comment>
+        <rdfs:comment xml:lang="en">This property represents the value of a time period.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/timeperiod.owl"/>
+        <rdfs:label xml:lang="it">periodo di tempo</rdfs:label>
+        <rdfs:label xml:lang="en">time period value</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/cp/owl/timeperiod.owl#TimePeriod -->
+
+    <owl:Class rdf:about="http://www.ontologydesignpatterns.org/cp/owl/timeperiod.owl#TimePeriod">
+        <rdfs:comment xml:lang="en">A Time Period is a temporal distance, even approximated, that elapses between two events or situations.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Un Periodo di tempo è una distanza temporale, anche approssimativa, che intercorre tra due eventi o situazioni.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/timeperiod.owl"/>
+        <rdfs:label xml:lang="en">Time Period</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/cp/owl/timeperiod.owl#TimePeriodMeasurementUnit -->
+
+    <owl:Class rdf:about="http://www.ontologydesignpatterns.org/cp/owl/timeperiod.owl#TimePeriodMeasurementUnit">
+        <rdfs:comment xml:lang="it">L&apos;unità di misura del periodo di tempo è l&apos;unità di misura di un periodo di tempo (ad es. anno, mese, settimana).</rdfs:comment>
+        <rdfs:comment xml:lang="en">The Time Period Measurement Unit is the unit for measuring a Time Period (e.g. year, month, week).</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/timeperiod.owl"/>
+        <rdfs:label xml:lang="en">Time Period Measurement Unit</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/damians/ferrate#Avvicinamento -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/damians/ferrate#Avvicinamento">
+        <rdfs:comment xml:lang="it">Percorso escursionistico dal punto di partenza dell&apos;itinerario all&apos;attacco della via attrezzata.</rdfs:comment>
+        <rdfs:label xml:lang="it">Avvicinamento</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/damians/ferrate#AvvicinamentoCorto -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/damians/ferrate#AvvicinamentoCorto">
+        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/timeperiod.owl#TimePeriod"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/damians/ferrate#Avvicinamento"/>
+        <rdfs:comment xml:lang="it">Sottogruppo di avvicinamenti con tempo di percorrenza uguale o inferiore a 30 minuti.</rdfs:comment>
+        <rdfs:label xml:lang="it">AvvicinamentoCorto</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/damians/ferrate#Complessità -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/damians/ferrate#Complessità">
+        <rdfs:comment xml:lang="it">Quattro ulteriori descrizioni con valori da 1 a 5 su caratteristiche proprie della via: difficoltà tecniche, impegno fisico, esposizione e difficoltà ambientali.</rdfs:comment>
+        <rdfs:label xml:lang="it">Complessità</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/damians/ferrate#ComplessitàAmbientaleElevata -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/damians/ferrate#ComplessitàAmbientaleElevata">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/damians/ferrate#Complessità"/>
+        <rdfs:comment xml:lang="it">Una complessità che possiede una complessità ambientale (roccie e strapiombi) notevole (maggiore di 3)</rdfs:comment>
+        <rdfs:label xml:lang="it">ComplessitàAmbientaleElevata</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/damians/ferrate#ComplessitàFisicaElevata -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/damians/ferrate#ComplessitàFisicaElevata">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/damians/ferrate#Complessità"/>
+        <rdfs:comment xml:lang="it">Una complessità che richiede un impegno fisico importante (maggiore di 3)</rdfs:comment>
+        <rdfs:label xml:lang="it">ComplessitàFisicaElevata</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/damians/ferrate#Difficoltà -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/damians/ferrate#Difficoltà">
+        <rdfs:comment xml:lang="it">La classificazione italiana si basa su 5 valori che tengono conto delle difficoltà complessive della via: F (facile), PD (poco/moderatamente difficile), D (difficile), TD (molto difficile) ed ED (estremamente difficile). Questa classificazione tiene in considerazione le difficoltà globali dell&apos;escursione e non solo le difficoltà inerenti la via ferrata.</rdfs:comment>
+        <rdfs:label xml:lang="it">Difficoltà</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/damians/ferrate#Ferrata -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/damians/ferrate#Ferrata">
+        <rdfs:comment xml:lang="it">Una via ferrata è un insieme di strutture e attrezzature realizzate artificialmente su una parete rocciosa per facilitarne la salita in sicurezza in un percorso escursionistico/alpinistico; tale azione, senza la presenza e l&apos;utilizzo delle strutture artificiali, necessiterebbe, per la progressione, della conoscenza e dell&apos;impiego di tecniche di arrampicata in cordata con attrezzature individuali alpinistiche o corpo libero.</rdfs:comment>
+        <rdfs:label xml:lang="it">Ferrata</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/damians/ferrate#FerrataAltaMontagna -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/damians/ferrate#FerrataAltaMontagna">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/damians/ferrate#Ferrata"/>
+        <rdfs:comment xml:lang="it">Itinerari attrezzati che si sviluppano in ambienti di Alta Montagna, generalmente raggiungendo almeno i 3000 metri.</rdfs:comment>
+        <rdfs:label xml:lang="it">FerrataAltaMontagna</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/damians/ferrate#FerrataImpegnativa -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/damians/ferrate#FerrataImpegnativa">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/damians/ferrate#Ferrata"/>
+        <rdfs:comment xml:lang="it">Una via ferrata classificata come Difficile la cui durata è superiore a 70 minuti OR la cui difficoltà sia gradi superiori</rdfs:comment>
+        <rdfs:label xml:lang="it">FerrataImpegnativa</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/damians/ferrate#FerrataLunga -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/damians/ferrate#FerrataLunga">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/damians/ferrate#Ferrata"/>
+        <rdfs:comment xml:lang="it">Itinerari attrezzati di lunghezza superiore ai 10 kilometri.</rdfs:comment>
+        <rdfs:label xml:lang="it">FerrataLunga</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/2003/01/geo/wgs84_pos#Point -->
+
+    <owl:Class rdf:about="http://www.w3.org/2003/01/geo/wgs84_pos#Point">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+        <rdfs:comment xml:lang="en">A point, typically described using a coordinate system relative to Earth, such as WGS84.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Un punto, tipicamente descritto utilizzando un sistema di coordinate relative alla Terra, come WGS84.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Uniquely identified by lat/long/alt. i.e.
+
+spaciallyIntersects(P1, P2) :- lat(P1, LAT), long(P1, LONG), alt(P1, ALT),
+  lat(P2, LAT), long(P2, LONG), alt(P2, ALT).
+
+sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P2).</rdfs:comment>
+        <rdfs:label xml:lang="en">point</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing -->
+
+    <owl:Class rdf:about="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing">
+        <rdfs:comment xml:lang="en">Anything with spatial extent, i.e. size, shape, or position.
+ e.g. people, places, bowling balls, as well as abstract areas like cubes.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Qualsiasi cosa con estensione spaziale, cioè dimensioni, forma o posizione.
+ Ad esempio persone, luoghi, palle da bowling, così come aree astratte come i cubi.</rdfs:comment>
+        <rdfs:label xml:lang="en">SpatialThing</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/damians/ferrate#Alpini_Oranaye -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/damians/ferrate#Alpini_Oranaye">
+        <rdf:type rdf:resource="http://www.semanticweb.org/damians/ferrate#Ferrata"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/damians/ferrate#FerrataAltaMontagna"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/damians/ferrate#FerrataImpegnativa"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/damians/ferrate#FerrataLunga"/>
+        <rdf:type rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+        <rdfs:comment xml:lang="it">La stupenda via Ferrata degli Alpini all&apos;Oronaye si sviluppa su una strada fatta dagli alpini per scopi militari al confine con la Francia.
+L&apos;itinerario è lungo, di alta montagna.</rdfs:comment>
+        <rdfs:label xml:lang="it">Alpini_Oranaye</rdfs:label>
+        <wgs84_pos:alt rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1720</wgs84_pos:alt>
+        <wgs84_pos:lat rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">44.43882</wgs84_pos:lat>
+        <wgs84_pos:long rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">6.98932</wgs84_pos:long>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/damians/ferrate#Alpini_OranayeAvvicinamento -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/damians/ferrate#Alpini_OranayeAvvicinamento">
+        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/timeperiod.owl#TimePeriod"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/damians/ferrate#Avvicinamento"/>
+        <rdfs:comment xml:lang="it">Proseguendo sulla strada in cui abbiamo parcheggiato giungiamo a un cartello che indica il sentiero S9 che ci porterà nel vallone di Enchiausa.
+
+Si prosegue camminando lungo la valle in direzione dell&apos;evidente cima del Monte Oronaye in fondo al vallone. Si prosegue per sentiero via via più ripido fino a un tratto pianeggiante in cui prenderemo il sentiero S30 verso sinistra in prossimità di un bivio.
+
+Si pende verso sinistra in direzione dell&apos;Oronaye giungendo quindi al Bivacco Enrico Mario (2650 m). Nei pressi del Bivacco c&apos;è un cartello con descrizione della via ferrata. 
+
+Si indossa l&apos;imbraco e si parte in direzione si un primo salto roccioso senza protezioni, ma non difficile. Si costeggia la montagna verso destra lungo ghiaioni non propriamente stabili giungendo quindi all&apos;attacco della ferrata seguendo le frecce gialle lungo il percorso.</rdfs:comment>
+        <rdfs:label xml:lang="it">Alpini_OranayeAvvicinamento</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/damians/ferrate#Alpini_OranayeComplessità -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/damians/ferrate#Alpini_OranayeComplessità">
+        <rdf:type rdf:resource="http://www.semanticweb.org/damians/ferrate#Complessità"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/damians/ferrate#ComplessitàAmbientaleElevata"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/damians/ferrate#ComplessitàFisicaElevata"/>
+        <rdfs:comment xml:lang="it">L&apos;itinerario è con pochi punti di appoggio quindi da percorrere in condizioni meteo stabili e buon allenamento.</rdfs:comment>
+        <rdfs:label xml:lang="it">Alpini_OranayeComplessità</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/damians/ferrate#Alpini_OranayeDurataFerrata -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/damians/ferrate#Alpini_OranayeDurataFerrata">
+        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/timeperiod.owl#TimePeriod"/>
+        <rdfs:comment xml:lang="it">L&apos;effettivo intervallo di tempo (medio) richiesto per completare la via ferrata.</rdfs:comment>
+        <rdfs:label xml:lang="it">Alpini_OranayeDurataFerrata</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/damians/ferrate#Casimiro -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/damians/ferrate#Casimiro">
+        <rdf:type rdf:resource="http://www.semanticweb.org/damians/ferrate#Ferrata"/>
+        <rdf:type rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+        <rdfs:comment xml:lang="it">La Ferrata di Casimiro si trova in Val di Rhemes ai piedi del Granta Parey. La Ferrata si raggiunge in breve dalla frazione di Chanavey nei pressi di Rhemes-Notre-Dame in Valle d&apos;Aosta. La ferrata è ben attrezzata e piacevole con un&apos;esposizione crescente e due ponti sospesi che aggiungono adrenalina all&apos;escursione.</rdfs:comment>
+        <rdfs:label xml:lang="it">Casimiro</rdfs:label>
+        <wgs84_pos:alt rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1803</wgs84_pos:alt>
+        <wgs84_pos:lat rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">45.579594</wgs84_pos:lat>
+        <wgs84_pos:long rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">7.123900</wgs84_pos:long>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/damians/ferrate#CasimiroAvvicinamento -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/damians/ferrate#CasimiroAvvicinamento">
+        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/timeperiod.owl#TimePeriod"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/damians/ferrate#Avvicinamento"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/damians/ferrate#AvvicinamentoCorto"/>
+        <rdfs:comment xml:lang="it">Si segue il sentiero che dal paese risale prima i verdi prati e poi in salita tra facili gradoni verso l&apos;attacco della ferrata tenendo la montagna alla nostra destra</rdfs:comment>
+        <rdfs:label xml:lang="it">CasimiroAvvicinamento</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/damians/ferrate#CasimiroComplessità -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/damians/ferrate#CasimiroComplessità">
+        <rdf:type rdf:resource="http://www.semanticweb.org/damians/ferrate#Complessità"/>
+        <rdfs:comment xml:lang="it">La Ferrata di Casimiro è un interessante ferrata che alterna tratti verticali con alcuni traversi esposti e due ponti sospesi. Le difficoltà sono contenute e con il giusto supporto può essere percorsa da neofiti a patto di essere in buono stato di forma.</rdfs:comment>
+        <rdfs:label xml:lang="it">CasimiroComplessità</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/damians/ferrate#CasimiroDurataFerrata -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/damians/ferrate#CasimiroDurataFerrata">
+        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/timeperiod.owl#TimePeriod"/>
+        <rdfs:comment xml:lang="it">L&apos;effettivo intervallo di tempo (medio) richiesto per completare la via ferrata.</rdfs:comment>
+        <rdfs:label xml:lang="it">CasimiroDurataFerrata</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/damians/ferrate#Difficile -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/damians/ferrate#Difficile">
+        <rdf:type rdf:resource="http://www.semanticweb.org/damians/ferrate#Difficoltà"/>
+        <rdfs:comment xml:lang="it">Uno dei 5 valori che tengono conto delle difficoltà complessive della via: D (difficile).</rdfs:comment>
+        <rdfs:label xml:lang="it">Difficile</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/damians/ferrate#EstremamenteDifficile -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/damians/ferrate#EstremamenteDifficile">
+        <rdf:type rdf:resource="http://www.semanticweb.org/damians/ferrate#Difficoltà"/>
+        <rdfs:comment xml:lang="it">Uno dei 5 valori che tengono conto delle difficoltà complessive della via: ED (estremamente difficile)</rdfs:comment>
+        <rdfs:label xml:lang="it">EstramenteDifficile</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/damians/ferrate#Facile -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/damians/ferrate#Facile">
+        <rdf:type rdf:resource="http://www.semanticweb.org/damians/ferrate#Difficoltà"/>
+        <rdfs:comment xml:lang="it">Uno dei 5 valori che tengono conto delle difficoltà complessive della via: F (facile).</rdfs:comment>
+        <rdfs:label xml:lang="it">Facile</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/damians/ferrate#GuideGressoney -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/damians/ferrate#GuideGressoney">
+        <rdf:type rdf:resource="http://www.semanticweb.org/damians/ferrate#Ferrata"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/damians/ferrate#FerrataImpegnativa"/>
+        <rdf:type rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+        <rdfs:comment xml:lang="it">La Ferrata delle Guide di Gressoney è probabilmente la ferrata più impegnativa d&apos;Italia.
+
+Il percorso è diviso in 3 sezioni:
+
+il Percorso Rosso da Gressoney La Trinitè ai ripetitori;
+il Percorso Giallo dopo il ponte tibetano a destra fino alle baite Bodma;
+il Percorso Nero dopo il ponte tibetano a sinistra fino alle baite Bodma.
+
+Le varianti gialla e nera sono alla fine dell&apos;itinerario e presentano le maggiori difficoltà.</rdfs:comment>
+        <rdfs:label xml:lang="it">GuideGressoney</rdfs:label>
+        <wgs84_pos:alt rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1603</wgs84_pos:alt>
+        <wgs84_pos:lat rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">45.82715</wgs84_pos:lat>
+        <wgs84_pos:long rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">7.82239</wgs84_pos:long>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/damians/ferrate#GuideGressoneyAvvicinamento -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/damians/ferrate#GuideGressoneyAvvicinamento">
+        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/timeperiod.owl#TimePeriod"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/damians/ferrate#Avvicinamento"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/damians/ferrate#AvvicinamentoCorto"/>
+        <rdfs:comment xml:lang="it">Si intraprende verso sinistra il sentiero di avvicinamento passando affianco a bagni pubblici. Si sale fino a raggiungere una cava dismessa e in breve si giunge all&apos;attacco della Ferrata</rdfs:comment>
+        <rdfs:label xml:lang="it">GuideGressoneyAvvicinamento</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/damians/ferrate#GuideGressoneyComplessità -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/damians/ferrate#GuideGressoneyComplessità">
+        <rdf:type rdf:resource="http://www.semanticweb.org/damians/ferrate#Complessità"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/damians/ferrate#ComplessitàFisicaElevata"/>
+        <rdfs:comment xml:lang="it">E&apos; una ferrata ricca di pareti strapiombanti che mettono molto alla prova la forza fisica dell&apos;escursionista. Le difficoltà tecniche non sono elevatissime vista l&apos;abbondante attrezzatura ma questo non deve trarre in inganno visto che i passaggi sono ostici in molti punti.</rdfs:comment>
+        <rdfs:label xml:lang="it">GuideGressoneyComplessità</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/damians/ferrate#GuideGressoneyDurataFerrata -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/damians/ferrate#GuideGressoneyDurataFerrata">
+        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/timeperiod.owl#TimePeriod"/>
+        <rdfs:comment xml:lang="it">L&apos;effettivo intervallo di tempo (medio) richiesto per completare la via ferrata.</rdfs:comment>
+        <rdfs:label xml:lang="it">GuideGressoneyDurataFerrata</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/damians/ferrate#Hour -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/damians/ferrate#Hour">
+        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/timeperiod.owl#TimePeriodMeasurementUnit"/>
+        <rdfs:comment xml:lang="it">L&apos;ora (indicata con h, dal latino hora) è un&apos;unità di misura del tempo pari a 3 600 secondi, ovvero a 60 minuti.</rdfs:comment>
+        <rdfs:label xml:lang="en">Hour</rdfs:label>
+        <rdfs:label xml:lang="it">Ora</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/damians/ferrate#Minute -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/damians/ferrate#Minute">
+        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/timeperiod.owl#TimePeriodMeasurementUnit"/>
+        <rdfs:comment xml:lang="it">Un minuto è composto da 60 secondi e costituisce 1/60 di ora. È opportuno distinguere il minuto primo, chiamato comunemente minuto, e il minuto secondo, chiamato comunemente secondo e caratterizzato dal simbolo s. Il minuto non è un&apos;unità di misura del SI, ma ne è comunque accettato l&apos;uso con il SI.</rdfs:comment>
+        <rdfs:label xml:lang="en">Minute</rdfs:label>
+        <rdfs:label xml:lang="it">Minuto</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/damians/ferrate#ModeratamenteDifficile -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/damians/ferrate#ModeratamenteDifficile">
+        <rdf:type rdf:resource="http://www.semanticweb.org/damians/ferrate#Difficoltà"/>
+        <rdfs:comment xml:lang="it">Uno dei 5 valori che tengono conto delle difficoltà complessive della via: PD (poco/moderatamente difficile).</rdfs:comment>
+        <rdfs:label xml:lang="it">ModeratamenteDifficile</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/damians/ferrate#MoltoDifficile -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/damians/ferrate#MoltoDifficile">
+        <rdf:type rdf:resource="http://www.semanticweb.org/damians/ferrate#Difficoltà"/>
+        <rdfs:comment xml:lang="it">Uno dei 5 valori che tengono conto delle difficoltà complessive della via: TD (molto difficile).</rdfs:comment>
+        <rdfs:label xml:lang="it">MoltoDifficile</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#extractedFrom">
+        <rdfs:comment>This annotation property should be assigned with a URI, which points to the possible reference ontology which the annotated pattern was extracted from (i.e. the reference ontology that the ontology elements have been deeply or partially cloned by). The range is not explicit in the definition of the annotation property because it would turn the ontology to OWL Full. E.g. The participation pattern is extracted from the Dolce Ultra Lite ontology, hence the value for this annotation property is http://www.ontologydesignpatterns.org/ont/dul/DUL.owl</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#hasComponent">
+        <rdfs:comment>This annotation property is useful for content ontology design patterns. Its value is a URI, which refers to another content ontology design pattern which is a component of the annotated one.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#hasUnitTest">
+        <rdfs:comment>This property can be used to annotate a unit test (e.g. in the form of a SPARQL query) to be launched to evaluate an ontology against a requirement-based task.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#isCloneOf">
+        <rdfs:comment>This annotation property is used for referring a cloned ontology entity to its cloning source.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#isSpecializationOf">
+        <rdfs:comment>This annotation property is useful for content ontology design patterns and its elements. Its value is a URI, which refers either to a content ontology design pattern that is specialized by the annotated one, or to an ontology element that is specialized by the annotated one.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#reengineeredFrom">
+        <rdfs:comment>This annotation property should be assigned with a URI, which points to the concept schema, page, or anything else from which the annotated pattern was reengineered.  If the source does not have any URI e.g., a printed book, this property value should provide information as precise as possible in order to identify the source. This property is alternative to the extractedFrom property because it is used when the pattern come from a concept schema which is not an owl ontology. For example content ontology design patterns, which are reengineered from data model patterns, rdf schemas, etc. should be annotatd with this property. E.g. The basicpersonalfoaf pattern is extracted from the rdf FOAF specification, hence the value for this annotation property is http://xmlns.com/foaf/spec/20071002.rdf</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#relatedCPs">
+        <rdfs:comment>This annotation property can be used to indicate other CPs (if any) that specialize, generalize, inlcude, or are components of the CP. Furthermore, this field may indicate other CPs that are typically used in conjunction with the described one. Important similarities and differences with other patterns can be also described here.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#scenarios">
+        <rdfs:comment>This annotation property is used for describing examples of instantiation of the Content OP. For example, for the part-of Content OP (which represents part-whole relations) a possible scenario is the sentence: &quot;the brain is part of the human body&quot;. Scenarios are expressed as natural language sentences.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/damians/ferrate#altitude">
+        <rdfs:label xml:lang="en">altitude</rdfs:label>
+        <rdfs:label xml:lang="it">altitudine</rdfs:label>
+        <rdfs:comment xml:lang="en">The WGS84 altitude of a SpatialThing (decimal meters 
+above the local reference ellipsoid).</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/damians/ferrate#altitudineMax">
+        <rdfs:comment xml:lang="it">il punto più alto incontrato durante l&apos;escursione.</rdfs:comment>
+        <rdfs:label xml:lang="it">altitudineMax</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/damians/ferrate#durataInOre">
+        <rdfs:label xml:lang="it">durata in ore</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/damians/ferrate#haAvvicinamento">
+        <rdfs:comment xml:lang="it">Questa proprietà mette in relazione una via ferrata con il suo avvicinamento.</rdfs:comment>
+        <rdfs:label xml:lang="it">haAvvicinamento</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/damians/ferrate#haC_Ambientali">
+        <rdfs:comment xml:lang="it">Le difficoltà relative all&apos;intera escursione. La valutazione tiene conto ad esempio delle difficoltà relative all&apos;avvicinamento, al rientro, ai tratti non protetti, all&apos;altitudine, a possibili tratti di ghiacciai o nevai perenni, eccettera...</rdfs:comment>
+        <rdfs:label xml:lang="it">ha complessità ambientali</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/damians/ferrate#haC_Esposizione">
+        <rdfs:label xml:lang="it">ha esposizione</rdfs:label>
+        <rdfs:comment xml:lang="it">Le difficoltà relative alla sensazione di vuoto percepito durante l&apos;ascesa.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/damians/ferrate#haC_ImpegnoFisico">
+        <rdfs:comment xml:lang="it">Le difficoltà relative alla preparazione atletica richiesta per percorrere l&apos;intera escursione. La valutazione tiene conto di fattori quali la lunghezza dell&apos;itinerario, il dislivello assoluto e relativo, ecc...</rdfs:comment>
+        <rdfs:label xml:lang="it">ha impegno fisico</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/damians/ferrate#haC_Tecniche">
+        <rdfs:comment xml:lang="it">Le difficoltà relative all&apos;arrampicata della via attrezzata. La valutazione tiene conto di non utilizzare la fune per trazionarsi ma solo come autoassicurazione.</rdfs:comment>
+        <rdfs:label xml:lang="it">ha complessità tecniche</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/damians/ferrate#latitudine">
+        <rdfs:label xml:lang="it">latitudine</rdfs:label>
+        <rdfs:comment xml:lang="en">The WGS84 latitude of a SpatialThing (decimal degrees).</rdfs:comment>
+        <rdfs:label xml:lang="en">altitude</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/damians/ferrate#longitudine">
+        <rdfs:comment xml:lang="en">The WGS84 longitude of a SpatialThing (decimal degrees).</rdfs:comment>
+        <rdfs:label xml:lang="it">longitudine</rdfs:label>
+        <rdfs:label xml:lang="en">longitude</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/damians/ferrate#lunghezzaItinerario">
+        <rdfs:label xml:lang="en">lunghezzaItinerario</rdfs:label>
+        <rdfs:comment xml:lang="it">Lunghezza in kilometri dell&apos;itinerario completo.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/damians/ferrate#tempo_di_percorrenza_espresso_in">
+        <rdfs:comment xml:lang="it">Questa proprietà (catena di due proprietà) mette in relazione una via ferrata con ia relativa unità di misura temporale.</rdfs:comment>
+        <rdfs:label xml:lang="it">tempo di percorrenza espresso in</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.w3.org/2003/01/geo/wgs84_pos#">
+        <dc:date>$Date: 2009/04/20 15:00:30 $</dc:date>
+        <rdfs:label>geo</rdfs:label>
+        <dc:description>A vocabulary for representing latitude, longitude and 
+ altitude information in the WGS84 geodetic reference datum. 
+ Version $Id: wgs84_pos.rdf,v 1.22 2009/04/20 15:00:30 timbl Exp $. See http://www.w3.org/2003/01/geo/ for more details.</dc:description>
+        <rdfs:comment>
+Recent changes to this namespace:
+$Log: wgs84_pos.rdf,v $
+Revision 1.22  2009/04/20 15:00:30  timbl
+Remove the time bits which have been deal with elsewhere eg in iCal.
+
+Revision 1.21  2009/04/20 12:52:47  timbl
+try again
+
+Revision 1.20  2009/04/20 12:42:11  timbl
+Add Event (edited ages ago and never checked in), and location (following discussion http://chatlogs.planetrdf.com/swig/2009-04-20#T12-36-09)
+
+Revision 1.19  2009/04/20 12:36:31  timbl
+Add Event (edited ages ago and never checked in), and location (following discussion http://chatlogs.planetrdf.com/swig/2009-04-20#T12-36-09)
+
+Revision 1.18  2006/02/01 22:01:04  danbri
+Clarified that lat and long are decimal degrees, and that alt is decimal metres about local reference ellipsoid
+
+Revision 1.17  2004/02/06 17:38:12  danbri
+Fixed a bad commit screwup
+
+Revision 1.15  2003/04/19 11:24:08  danbri
+Fixed the typo even more.
+
+Revision 1.14  2003/04/19 11:16:56  danbri
+fixed a typo
+
+Revision 1.13  2003/02/19 22:27:27  connolly
+relaxed domain constraints on lat/long/alt from Point to SpatialThing
+
+Revision 1.12  2003/01/12 01:41:41  danbri
+Trying local copy of XSLT doc.
+
+Revision 1.11  2003/01/12 01:20:18  danbri
+added a link to morten&apos;s xslt rdfs viewer.
+
+Revision 1.10  2003/01/11 18:56:49  danbri
+Removed datatype range from lat and long properties, since they would
+have required each occurance of the property to mention the datatype.
+
+Revision 1.9  2003/01/11 11:41:31  danbri
+Another typo; repaired rdfs:Property to rdf:Property x4
+
+Revision 1.8  2003/01/11 11:05:02  danbri
+Added an rdfs:range for each lat/long/alt property,
+http://www.w3.org/2001/XMLSchema#float
+
+Revision 1.7  2003/01/10 20:25:16  danbri
+Longer rdfs:comment for Point, trying to be Earth-centric and neutral about
+coordinate system(s) at the same time. Feedback welcomed.
+
+Revision 1.6  2003/01/10 20:18:30  danbri
+Added CVS log comments into the RDF/XML as an rdfs:comment property of the
+vocabulary. Note that this is not common practice (but seems both harmless
+and potentially useful).
+
+
+revision 1.5
+date: 2003/01/10 20:14:31;  author: danbri;  state: Exp;  lines: +16 -5
+Updated schema:
+Added a dc:date, added url for more info. Changed the rdfs:label of the
+namespace from gp to geo. Added a class Point, set as the rdfs:domain of
+each property. Added XML comment on the lat_long property suggesting that
+we might not need it (based on #rdfig commentary from implementors).
+
+revision 1.4
+date: 2003/01/10 20:01:07;  author: danbri;  state: Exp;  lines: +6 -5
+Fixed typo; several rdfs:about attributes are now rdf:about. Thanks to MortenF in
+#rdfig for catching this error.
+
+revision 1.3
+date: 2003/01/10 11:59:03;  author: danbri;  state: Exp;  lines: +4 -3
+fixed buglet in vocab, added more wgs links
+
+revision 1.2
+date: 2003/01/10 11:01:11;  author: danbri;  state: Exp;  lines: +4 -4
+Removed alt from the as-a-flat-string property, and switched from
+space separated to comma separated.
+
+revision 1.1
+date: 2003/01/10 10:53:23;  author: danbri;  state: Exp;
+basic geo vocab
+
+</rdfs:comment>
+        <dc:title>WGS84 Geo Positioning: an RDF vocabulary</dc:title>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.w3.org/2003/01/geo/wgs84_pos#lat_long">
+        <rdfs:comment>A comma-separated representation of a latitude, longitude coordinate.</rdfs:comment>
+        <rdfs:label>lat/long</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.w3.org/2003/01/geo/wgs84_pos#location">
+        <rdfs:comment xml:lang="en">The relation between something and the point, 
+ or other geometrical thing in space, where it is.  For example, the realtionship between
+ a radio tower and a Point with a given lat and long.
+ Or a relationship between a park and its outline as a closed arc of points, or a road and
+ its location as a arc (a sequence of points).
+ Clearly in practice there will be limit to the accuracy of any such statement, but one would expect
+ an accuracy appropriate for the size of the object and uses such as mapping .</rdfs:comment>
+        <rdfs:comment xml:lang="it">posizione</rdfs:comment>
+        <rdfs:label xml:lang="en">location</rdfs:label>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
